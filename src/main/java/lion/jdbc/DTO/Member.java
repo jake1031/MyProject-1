@@ -12,8 +12,16 @@ public class Member {
     // 기본 생성자 : 안씀
     public Member() {}
 
-    // 인자를 받는 생성자
+    // 회원 생성용으로 쓰는 생성자
     public Member(String loginId, String password, String name) {
+        this.loginId = loginId;
+        this.password = password;
+        this.name = name;
+    }
+
+    // update용으로 쓰는 생성자(memberId 필요)
+    public Member(Long memberId, String loginId, String password, String name) {
+        this.memberId = memberId;
         this.loginId = loginId;
         this.password = password;
         this.name = name;
@@ -34,9 +42,7 @@ public class Member {
 
 
 
-    public String getMemberId() {
-        return String.valueOf(memberId);
-    }
+    public Long getMemberId() { return memberId; }
 
     public String getLoginId() {
         return loginId;
