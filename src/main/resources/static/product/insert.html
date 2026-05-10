@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>상품 등록</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<h1>📦 신규 상품 등록</h1>
+<hr>
+<form>
+    <div class="form-group">
+        <label for="name">상품명</label>
+        <input type="text" id="name" name="name" placeholder="상품 이름 입력">
+    </div>
+    <div class="form-group">
+        <label for="price">판매 가격</label>
+        <input type="number" id="price" name="price" min="0" placeholder="0"> 원
+    </div>
+    <div class="form-group">
+        <label for="stock">재고 수량</label>
+        <input type="number" id="stock" name="stock" min="0" placeholder="0"> 개
+    </div>
+
+    <!-- 등록 버튼 -->
+    <button type="submit">등록하기</button>
+
+    <!-- 취소 버튼 (메인으로 돌아가기) -->
+    <a href="../index.html">
+        <button type="button">취소</button>
+    </a>
+</form>
+</body>
+</html>
